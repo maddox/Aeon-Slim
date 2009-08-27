@@ -1,0 +1,49 @@
+<window>
+	<id>6</id>
+	<defaultcontrol>550</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<!--54 Clear List
+550 Slimlist
+50 List
+52 Multiplex
+53 Wall
+57 Showcase
+-->
+	<views>550,50,52,53,57</views>
+	<controls>
+	<!--	<control type="multiimage">
+			<include>BackgroundVarsGlobal</include>
+			<include>BackgroundVarsVideo</include>
+		</control>
+	-->
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52) | Control.IsVisible(552) | Control.IsVisible(550) | Control.IsVisible(551)] + [Window.IsActive(24) + !Skin.HasSetting(novideofanart)] + !IsEmpty(listitem.property(fanart_image))</visible>
+			<fadetime>400</fadetime>
+			<texture>$INFO[listitem.property(fanart_image)]</texture>
+			<include>Animation_FanartFade</include>
+		</control>
+		<include condition="!Skin.HasSetting(MissingFanartBlack)">MediaBackdropsVideo</include>   
+		<include>Furniture_WallBackground</include>
+		<control type="group">
+
+			<include>FullscreenDimensions</include>
+			<include>Animation_OpenCloseZoom</include>
+			<include>Furniture_Time</include>
+			<include>Furniture_MediaPanel</include>
+			<include>Viewtype_Wall</include>
+			<include>Furniture_WallTime</include>
+			<include>Furniture_WallRSS</include>
+			 <include>ScrollOffsetLabel</include>
+			<include>Viewtype_List_Slim</include>
+			<include>Viewtype_List</include>
+			<include>Viewtype_Showcase</include>
+			 <include>NewMediaMenu</include>
+
+		</control>
+
+		<include>Furniture_DarkGradient</include>
+		<!--<include>Background_ContextBlack</include>-->
+		<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
+	</controls>
+</window>

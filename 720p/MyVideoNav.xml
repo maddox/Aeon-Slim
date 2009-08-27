@@ -1,0 +1,85 @@
+<window id="25">
+	<defaultcontrol always="true">550</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<views>550,50,551,52,552,53,57</views>
+	<controls>
+ 
+		<control type="image" id="109">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<texture>-</texture>
+			<visible>[Skin.HasSetting(videomovies) + !Skin.HasSetting(nomultiplexpopup) + ![Skin.HasSetting(multiplexinfooff) | Skin.HasSetting(multiplexinfotrigger)] + [Control.HasFocus(52) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomultiplextvpopup) + ![Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfotrigger)] + [Control.HasFocus(52) | ControlGroup(7000).HasFocus()] + [!Container(52).OnNext + !Container(52).OnPrevious]] | [Skin.HasSetting(videotv) + !Skin.HasSetting(nomultiplextvpopup) + ![Skin.HasSetting(multiplextvinfooff) | Skin.HasSetting(multiplextvinfotrigger)] + [Control.HasFocus(552) | ControlGroup(7000).HasFocus()] + [!Container(552).OnNext + !Container(552).OnPrevious]]</visible>
+			<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
+		</control>
+ 
+		<control type="image" id="70109">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<texture>-</texture>
+			<visible>[Skin.HasSetting(videomovies) + ![Skin.HasSetting(showcaseinfooff) | Skin.HasSetting(showcaseinfotrigger)] + [Control.HasFocus(57) | ControlGroup(7000).HasFocus()] + [!Container(57).OnNext + !Container(57).OnPrevious]]</visible>
+			<animation effect="fade" start="0" end="100" time="150" delay="3000">Visible</animation>
+		</control>
+<!--		<control type="group">
+			<visible>[!Skin.HasSetting(genre_fanart_onoff) + Container.Content(genres)] | !Container.Content(genres)</visible>
+		
+			<include condition="Skin.HasSetting(videotv)">MediaBackdropsTV</include>
+			<include condition="Skin.HasSetting(videomovies)">MediaBackdropsMovies</include>
+		</control> -->
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<fadetime>400</fadetime>
+			<texture>genrefanart/$INFO[ListItem.Label].jpg</texture>
+			<visible>[Skin.HasSetting(genre_fanart_onoff) + Container.Content(genres)]</visible>
+		</control>
+		<control type="largeimage" id="102">
+			<include>FullscreenDimensions</include>
+			<visible>[Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(52)| Control.IsVisible(53) | Control.IsVisible(552) | Control.IsVisible(550) | Control.IsVisible(551)] + [[Container.Content(movies) + !Skin.HasSetting(nomoviefanart)] | [Container.Content(tvshows) + !Skin.HasSetting(notvfanart)]] + [!Container(551).OnNext + !Container(551).OnPrevious] + [!Container(552).OnNext + !Container(552).OnPrevious] + [!Container(57).OnNext + !Container(57).OnPrevious] + [!Container(550).OnNext + !Container(550).OnPrevious]+[!Container(551).OnNext + !Container(551).OnPrevious]+[!Container(50).OnNext + !Container(50).OnPrevious]+[!Container(53).OnNext + !Container(53).OnPrevious]+[!Container(52).OnNext + !Container(52).OnPrevious]</visible>
+			
+			<texture>$INFO[listitem.property(fanart_image)]</texture>
+			<animation effect="fade" start="0" end="100" time="1550" reversible="false" delay="100">Visible</animation>	
+			
+					</control>
+ 
+
+
+    	<include condition="Skin.HasSetting(videotv)+!Skin.HasSetting(MissingFanartBlack)">MediaBackdropsTV</include>    
+		<include condition="Skin.HasSetting(videomovies)+!Skin.HasSetting(MissingFanartBlack)">MediaBackdropsMovies</include>   
+ 
+    	<include condition="Skin.HasSetting(videotv)">MediaBackdropsTVFanart</include>    
+    	<include>MediaBackdropsMultiplex</include>    
+	 	<include>Furniture_WallBackground</include>  
+		<control type="group">
+
+			<include>FullscreenDimensions</include>
+			<include>Animation_OpenCloseZoom</include>
+			<include>Furniture_Time</include>
+			<include>Conditions_HiddenByInfoPages</include>
+			<include>Furniture_MediaPanel</include>
+			<include>ListFade</include>
+			<include>ListFade2</include>
+			<include>ListFade_Low</include>
+			<include>Viewtype_Wall</include>
+			<include>Furniture_WallTime</include>
+			<include>Furniture_WallRSS</include>
+			<include>Viewtype_List_Slim</include>
+			<include>Viewtype_List</include>
+			<include>Viewtype_List_Low</include>
+			<include>Viewtype_Showcase</include>
+			<include condition="!Skin.HasSetting(oldmultiplex)">Viewtype_Multiplex</include>
+			<include condition="Skin.HasSetting(oldmultiplex)">Viewtype_MultiplexOld</include>
+			 <include>NewMediaMenu</include>
+		</control>
+
+		<include condition="Skin.HasSetting(videomovies)">Furniture_ShowcaseMediaFlags</include>
+		<include condition="Skin.HasSetting(videotv)">Furniture_EpisodeMediaFlags</include>
+		<include condition="!Skin.HasSetting(newwall)">Furniture_WallMediaFlags</include>
+		<include>Furniture_DarkGradient</include>
+		<include>ScrollOffsetLabel</include>
+		<!--<include>Background_ContextBlack</include>-->
+		<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
+	</controls>
+</window>

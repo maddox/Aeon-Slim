@@ -1,0 +1,1127 @@
+<includes>
+	<!-- This are the extra includes for the night (& light) theme -->
+	<!-- WALL -->
+	<!-- Watched Overlay -->
+	<include name="WatchedOverlayWall">
+		<posx>87</posx>
+		<posy>8</posy>
+		<width>30</width>
+		<height>30</height>
+	</include>
+
+	<include name="WatchedOverlayWallSmall">
+		<posx>68</posx>
+		<posy>6</posy>
+		<width>30</width>
+		<height>30</height>
+	</include>
+
+	<!-- SHOWCASE -->
+	<!-- Watched Overlay -->
+	<include name="WatchedOverlayShowCaseNormal">
+		<posx>181</posx>
+		<posy>9</posy>
+		<width>40</width>
+		<height>40</height>
+	</include>
+
+	<include name="WatchedOverlayShowCaseDVD">
+		<posx>181</posx>
+		<posy>30</posy>
+		<width>40</width>
+		<height>40</height>
+	</include>
+
+	<!-- MULTIPLEX -->
+	<!-- Thick Back -->
+	<include name="MultiplexThickBack">
+		<width>1130</width>
+		<height>564</height>
+		<texture>multiplex/multiplex_back.png</texture>
+		<visible>!Skin.HasSetting(multiplexthin)</visible>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<include name="MultiplexThickBackTitleMod">
+		<posy>-11</posy>
+		<width>1130</width>
+		<height>576</height>
+		<texture>multiplex/multiplex_back_title.png</texture>
+		<visible>!Skin.HasSetting(multiplexthin)</visible>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<!-- Watched Overlay -->
+	<include name="WatchedOverlayMultiPlexNormal">
+		<posx>79</posx>
+		<posy>4</posy>
+		<width>32</width>
+		<height>32</height>
+	</include>
+
+	<include name="WatchedOverlayMultiPlexNormalFlow">
+		<posx>153</posx>
+		<posy>102</posy>
+		<width>32</width>
+		<height>32</height>
+	</include>
+
+	<include name="WatchedOverlayMultiPlexDVD">
+		<posx>79</posx>
+		<posy>9</posy>
+		<width>32</width>
+		<height>32</height>
+	</include>
+
+	<include name="WatchedOverlayMultiPlexDVDFlow">
+		<posx>153</posx>
+		<posy>107</posy>
+		<width>32</width>
+		<height>32</height>
+	</include>
+
+	<include name="WatchedOverlayMultiPlexTVNormal">
+		<posx>174</posx>
+		<posy>2</posy>
+		<width>32</width>
+		<height>32</height>
+	</include>
+
+	<include name="WatchedOverlayMultiPlexTVDVD">
+		<posx>174</posx>
+		<posy>4</posy>
+		<width>32</width>
+		<height>32</height>
+	</include>
+
+	<!-- Light -->
+	<include name="MultiplexPlotLight">
+		<width>1130</width>
+		<height>564</height>
+		<texture>multiplex/multiplex_tablet.png</texture>
+	</include>
+
+	<include name="MultiplexBigThumbLight">
+		<width>1130</width>
+		<height>564</height>
+		<texture>multiplex/multiplex_tablet_bigthumb.png</texture>
+	</include>
+
+	<include name="MultiplexTVLight">
+		<width>1130</width>
+		<height>564</height>
+		<texture>multiplex/multiplex_tvtablet.png</texture>
+	</include>
+
+	<include name="MultiplexPlotTitleLight">
+		<width>1130</width>
+		<height>576</height>
+		<posy>-11</posy>
+		<texture>multiplex/multiplex_tablet_title.png</texture>
+	</include>
+
+	<include name="MultiplexBigThumbTitleLight">
+		<width>1130</width>
+		<height>576</height>
+		<posy>-11</posy>
+		<texture>multiplex/multiplex_tablet_bigthumb_title.png</texture>
+	</include>
+
+	<include name="MultiplexTVTitleLight">
+		<width>1130</width>
+		<height>576</height>
+		<posy>-11</posy>
+		<texture>multiplex/multiplex_tvtablet_title.png</texture>
+	</include>
+
+	<!-- Night -->
+	<include name="MultiplexPlotNight">
+		<width>1130</width>
+		<height>564</height>
+		<texture>multiplex/night/multiplex_tablet.png</texture>
+	</include>
+
+	<include name="MultiplexBigThumbNight">
+		<width>1130</width>
+		<height>564</height>
+		<texture>multiplex/night/multiplex_tablet_bigthumb.png</texture>
+	</include>
+
+	<include name="MultiplexTVNight">
+		<width>1130</width>
+		<height>564</height>
+		<texture>multiplex/night/multiplex_tvtablet.png</texture>
+	</include>
+
+	<include name="MultiplexPlotTitleNight">
+		<width>1130</width>
+		<height>576</height>
+		<posy>-11</posy>
+		<texture>multiplex/night/multiplex_tablet_title.png</texture>
+	</include>
+
+	<include name="MultiplexBigThumbTitleNight">
+		<width>1130</width>
+		<height>576</height>
+		<posy>-11</posy>
+		<texture>multiplex/night/multiplex_tablet_bigthumb_title.png</texture>
+	</include>
+
+	<include name="MultiplexTVTitleNight">
+		<width>1130</width>
+		<height>576</height>
+		<posy>-11</posy>
+		<texture>multiplex/night/multiplex_tvtablet_title.png</texture>
+	</include>
+
+	<!-- LIST VIEW -->
+	<include name="WatchedOverlay">
+		<posx>712</posx>
+		<posy>4</posy>
+		<width>30</width>
+		<height>30</height>
+	</include>
+
+	<include name="WatchedOverlay2">
+		<posx>712</posx>
+		<posy>18</posy>
+		<width>30</width>
+		<height>30</height>
+	</include>
+
+	<!-- Light -->
+	<include name="ListFloorLight">
+		<texture>list/list_floor.png</texture>
+	</include>
+
+	<include name="ListLight">
+		<texture>list/listpanel_back.png</texture>
+	</include>
+
+	<include name="ListSpotLight">
+		<texture>list/list_spot.png</texture>
+	</include>
+
+	<include name="ListLineLight">
+		<texture>list/listpanel_line.png</texture>
+	</include>
+
+	<include name="ListScrollBarLight">
+		<control type="scrollbar" id="61">
+			<description>My first scroll bar control</description>
+			<posx>778</posx>
+			<posy>108</posy>
+			<width>45</width>
+			<height>545</height>
+			<visible>Control.IsVisible(50)</visible>
+			<texturesliderbackground>-</texturesliderbackground>
+			<texturesliderbar>-</texturesliderbar>
+			<texturesliderbarfocus>-</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>list/list_scrollclip.png</textureslidernibfocus>
+			<pulseonselect/>
+			<orientation>vertical</orientation>
+			<showonepage>true</showonepage>
+			<onup>61</onup>
+			<ondown>61</ondown>
+			<onleft>50</onleft>
+			<onright>2</onright>
+			<include>Animation_CommonFade</include>
+			<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+		</control>
+
+	</include>
+
+	<!-- Night -->
+	<include name="ListFloorNight">
+		<texture>list/night/list_floor.png</texture>
+	</include>
+
+	<include name="ListNight">
+		<texture>list/night/listpanel_back.png</texture>
+	</include>
+
+	<include name="ListSpotNight">
+		<texture>list/night/list_spot.png</texture>
+	</include>
+
+	<include name="ListLineNight">
+		<texture>list/night/listpanel_line.png</texture>
+	</include>
+
+	<include name="ListScrollBarNight">
+		<control type="scrollbar" id="61">
+			<description>My first scroll bar control</description>
+			<posx>-45</posx>
+			<posy>108</posy>
+			<width>65</width>
+			<height>545</height>
+			<visible allowhiddenfocus="false">Control.IsVisible(50)</visible>
+			<texturesliderbackground>windows/scrollbarbacklist.png</texturesliderbackground>
+			<texturesliderbar>-</texturesliderbar>
+			<texturesliderbarfocus>-</texturesliderbarfocus>
+			<textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
+			<textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+			<pulseonselect/>
+			<orientation>vertical</orientation>
+			<showonepage>false</showonepage>
+			<onup>61</onup>
+			<ondown>61</ondown>
+			<onleft>7000</onleft>
+			<onright>50</onright>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,0" end="46,0" time="200">Focus</animation>
+		</control>
+
+	</include>
+
+	<!-- DIALOGS -->
+	<!-- Light -->
+	<include name="ScanBackLight">
+		<texture>dialogs/scan_backg.png</texture>
+	</include>
+
+	<include name="ScanFillLight">
+		<midtexture>dialogs/scan_fill.png</midtexture>
+	</include>
+
+	<include name="SliderBackLight">
+		<texture>osd/osd_slider_dialog.png</texture>
+	</include>
+
+	<include name="TextColorLight">
+		<textcolor>FF323232</textcolor>
+	</include>
+
+	<!-- Night -->
+	<include name="ScanBackNight">
+		<texture>dialogs/night/scan_backg.png</texture>
+	</include>
+
+	<include name="ScanFillNight">
+		<midtexture>dialogs/night/scan_fill.png</midtexture>
+	</include>
+
+	<include name="SliderBackNight">
+		<texture>osd/night/osd_slider_dialog.png</texture>
+	</include>
+
+	<include name="TextColorNight">
+		<textcolor>FF818181</textcolor>
+	</include>
+
+	<!-- DIALOG CONTEXT MENU -->
+	<!-- Light -->
+	<include name="ContextTopLight">
+		<texture>dialogs/context_top.png</texture>
+	</include>
+
+	<include name="ContextMiddleLight">
+		<texture>dialogs/context_middle.png</texture>
+	</include>
+
+	<include name="ContextBottomLight">
+		<texture>dialogs/context_bottom.png</texture>
+	</include>
+
+	<include name="ContextFocusLight">
+		<textcolor>FF383838</textcolor>
+		<focusedcolor>FFdfdfdf</focusedcolor>
+		<texturenofocus>dialogs/context_nofocus.png</texturenofocus>
+		<texturefocus>dialogs/context_highlight.png</texturefocus>
+	</include>
+
+	<!-- Night -->
+	<include name="ContextTopNight">
+		<texture>dialogs/night/context_top.png</texture>
+	</include>
+
+	<include name="ContextMiddleNight">
+		<texture>dialogs/night/context_middle.png</texture>
+	</include>
+
+	<include name="ContextBottomNight">
+		<texture>dialogs/night/context_bottom.png</texture>
+	</include>
+
+	<include name="ContextFocusNight">
+		<textcolor>FF818181</textcolor>
+		<focusedcolor>FFdfdfdf</focusedcolor>
+		<texturenofocus>dialogs/night/context_nofocus.png</texturenofocus>
+		<texturefocus>dialogs/night/context_highlight.png</texturefocus>
+	</include>
+
+	<!-- DIALOG CONTENT SETTINGS -->
+	<!-- Light -->
+	<include name="ContentSizesLight">
+		<posx>206</posx>
+		<posy>202</posy>
+		<width>869</width>
+		<height>317</height>
+	</include>
+
+	<include name="ContentBackLight">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>869</width>
+			<height>317</height>
+			<texture>dialogs/setcontent_back.png</texture>
+		</control>
+
+	</include>
+
+	<include name="ScraperPositionLight">
+		<posx>514</posx>
+	</include>
+
+	<include name="ScraperFocusLight">
+		<texture>dialogs/setcontent_scraper_focus.png</texture>
+	</include>
+
+	<include name="ScraperFocusTextColorLight">
+		<textcolor>FF818181</textcolor>
+		<selectedcolor>9b3cd2fd</selectedcolor>
+	</include>
+
+	<include name="ScraperNoFocusLight">
+		<texture>dialogs/setcontent_scraper_nofocus.png</texture>
+	</include>
+
+	<include name="ScraperNoFocusTextColorLight">
+		<textcolor>FF000000</textcolor>
+		<selectedcolor>9b3cd2fd</selectedcolor>
+	</include>
+
+	<include name="ContentGroupListSizesLight">
+		<posx>10</posx>
+		<posy>76</posy>
+		<width>504</width>
+		<height>205</height>
+	</include>
+
+	<include name="ContentSpinControlLight">
+		<posx>10</posx>
+		<posy>35</posy>
+		<width>504</width>
+		<height>41</height>
+		<texturefocus>dialogs/setcontent_button_focus.png</texturefocus>
+		<texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
+		<textcolor>FF939597</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<spinposx>-4</spinposx>
+	</include>
+
+	<include name="ContentRadioButtonLight">
+		<width>504</width>
+		<height>41</height>
+		<texturefocus>dialogs/setcontent_button_focus.png</texturefocus>
+		<texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
+		<textcolor>FF939597</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+	</include>
+
+	<include name="ContentLabelLight">
+		<width>504</width>
+		<height>41</height>
+		<textcolor>FF939597</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+	</include>
+
+	<include name="ContentButtonLight">
+		<posx>689</posx>
+		<width>156</width>
+		<textcolor>FFf5f5f5</textcolor>
+		<focusedcolor>FF262728</focusedcolor>
+		<selectedcolor>FF262728</selectedcolor>
+		<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
+	</include>
+
+	<!-- Night -->
+	<include name="ContentSizesNight">
+		<posx>209</posx>
+		<posy>209</posy>
+		<width>862</width>
+		<height>316</height>
+	</include>
+
+	<include name="ContentBackNight">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>862</width>
+			<height>316</height>
+			<texture>dialogs/night/setcontent_back.png</texture>
+		</control>
+
+	</include>
+
+	<include name="ScraperPositionNight">
+		<posx>520</posx>
+	</include>
+
+	<include name="ScraperFocusNight">
+		<texture>dialogs/night/setcontent_scraper_focus.png</texture>
+	</include>
+
+	<include name="ScraperFocusTextColorNight">
+		<textcolor>FFd8d8d8</textcolor>
+		<selectedcolor>FF3cd2fd</selectedcolor>
+	</include>
+
+	<include name="ScraperNoFocusNight">
+		<texture>dialogs/night/setcontent_scraper_nofocus.png</texture>
+	</include>
+
+	<include name="ScraperNoFocusTextColorNight">
+		<textcolor>FF303030</textcolor>
+		<selectedcolor>9b3cd2fd</selectedcolor>
+	</include>
+
+	<include name="ContentGroupListSizesNight">
+		<posx>12</posx>
+		<posy>76</posy>
+		<width>508</width>
+		<height>205</height>
+	</include>
+
+	<include name="ContentSpinControlNight">
+		<posx>12</posx>
+		<posy>35</posy>
+		<width>508</width>
+		<height>41</height>
+		<texturefocus>dialogs/night/setcontent_button_focus.png</texturefocus>
+		<texturenofocus>dialogs/night/setcontent_button_nofocus.png</texturenofocus>
+		<textcolor>FF505050</textcolor>
+		<focusedcolor>FFd8d8d8</focusedcolor>
+		<spinposx>1</spinposx>
+	</include>
+
+	<include name="ContentRadioButtonNight">
+		<width>508</width>
+		<height>41</height>
+		<texturefocus>dialogs/night/setcontent_button_focus.png</texturefocus>
+		<texturenofocus>dialogs/night/setcontent_button_nofocus.png</texturenofocus>
+		<textcolor>FF505050</textcolor>
+		<focusedcolor>FFd8d8d8</focusedcolor>
+	</include>
+
+	<include name="ContentLabelNight">
+		<width>508</width>
+		<height>41</height>
+		<textcolor>FF505050</textcolor>
+		<focusedcolor>FFd8d8d8</focusedcolor>
+	</include>
+
+	<include name="ContentButtonNight">
+		<posx>694</posx>
+		<width>155</width>
+		<textcolor>FF818181</textcolor>
+		<focusedcolor>FFe8e8e8</focusedcolor>
+		<selectedcolor>FFe8e8e8</selectedcolor>
+		<texturefocus>dialogs/night/setcontent_rightmenu_highlight.png</texturefocus>
+	</include>
+
+	<!-- DIALOG MEDIA SOURCE -->
+	<!-- Light -->
+	<include name="MediaSourceBackLight">
+		<texture>dialogs/addsource_back.png</texture>
+	</include>
+
+	<include name="MediaSourceButtonLight">
+		<width>156</width>
+		<height>41</height>
+		<textcolor>FFf5f5f5</textcolor>
+		<focusedcolor>FF262728</focusedcolor>
+		<selectedcolor>FF262728</selectedcolor>
+		<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
+	</include>
+
+	<include name="MediaAddSourceTopLight">
+		<posx>18</posx>
+		<posy>46</posy>
+		<width>653</width>
+		<height>174</height>
+		<texture>dialogs/addsource_highlighttop.png</texture>
+	</include>
+
+	<include name="MediaAddSourceLight">
+		<posx>18</posx>
+		<posy>255</posy>
+		<width>653</width>
+		<height>51</height>
+		<texture>dialogs/addsource_highlight.png</texture>
+	</include>
+
+	<!-- Night -->
+	<include name="MediaSourceBackNight">
+		<texture>dialogs/night/addsource_back.png</texture>
+	</include>
+
+	<include name="MediaSourceButtonNight">
+		<width>154</width>
+		<height>41</height>
+		<textcolor>FF818181</textcolor>
+		<focusedcolor>FFe8e8e8</focusedcolor>
+		<selectedcolor>FFe8e8e8</selectedcolor>
+		<texturefocus>dialogs/night/setcontent_rightmenu_highlight.png</texturefocus>
+	</include>
+
+	<include name="MediaAddSourceTopNight">
+		<posx>20</posx>
+		<posy>45</posy>
+		<width>652</width>
+		<height>174</height>
+		<texture>dialogs/night/addsource_highlighttop.png</texture>
+	</include>
+
+	<include name="MediaAddSourceNight">
+		<posx>19</posx>
+		<posy>255</posy>
+		<width>652</width>
+		<height>51</height>
+		<texture>dialogs/night/addsource_highlight.png</texture>
+	</include>
+
+	<!-- FULLSCREEN INFO -->
+	<!-- Light -->
+	<include name="InfoRightPanelTopLight">
+		<posx>480</posx>
+		<posy>0</posy>
+		<width>800</width>
+		<height>720</height>
+		<texture>info/lite/info_rightpaneltop.png</texture>
+	</include>
+
+	<include name="InfoRightPanelTopOSDLight">
+		<posx>638</posx>
+		<posy>0</posy>
+		<width>800</width>
+		<height>720</height>
+		<texture>info/lite/info_rightpaneltop.png</texture>
+	</include>
+
+	<!-- Night -->
+	<include name="InfoRightPanelTopNight">
+		<posx>480</posx>
+		<posy>0</posy>
+		<width>800</width>
+		<height>720</height>
+		<texture>info/night/info_rightpaneltop.png</texture>
+	</include>
+
+	<include name="InfoRightPanelTopOSDNight">
+		<posx>638</posx>
+		<posy>0</posy>
+		<width>800</width>
+		<height>720</height>
+		<texture>info/night/info_rightpaneltop.png</texture>
+	</include>
+
+	<!-- OSD -->
+	<!-- Light -->
+	<include name="OSDButtonLight">
+		<texturefocus>osd/osd_button_focus.png</texturefocus>
+		<texturenofocus>osd/osd_button_nofocus.png</texturenofocus>
+	</include>
+
+	<include name="OSDBackLight">
+		<colordiffuse>cdffffff</colordiffuse>
+		<texture>osd/osd_back.png</texture>
+	</include>
+
+	<include name="OSDSettingsBackLight">
+		<colordiffuse>cdffffff</colordiffuse>
+		<texture>osd/osd_settings_back.png</texture>
+	</include>
+
+	<include name="OSDProgressLight">
+		<lefttexture>osd/osd_progress_left.png</lefttexture>
+		<midtexture>osd/osd_progress_mid.png</midtexture>
+		<righttexture>osd/osd_progress_right.png</righttexture>
+	</include>
+
+	<include name="OSDVisSelectLight">
+		<texturebg border="5">dialogs/vis_select.png</texturebg>
+	</include>
+
+	<include name="OSDSettingsButtonFocusLight">
+		<texture>osd/osd_settings_buttonf.png</texture>
+	</include>
+
+	<include name="OSDSettingsButtonNoFocusLight">
+		<texture>osd/osd_settings_buttonnf.png</texture>
+	</include>
+
+	<include name="OSDNumItemsColorLight">
+		<textcolor>FF161616</textcolor>
+	</include>
+
+	<!-- Night -->
+	<include name="OSDButtonNight">
+		<texturefocus>osd/night/osd_button_focus.png</texturefocus>
+		<texturenofocus>osd/night/osd_button_nofocus.png</texturenofocus>
+	</include>
+
+	<include name="OSDBackNight">
+		<texture>osd/night/osd_back.png</texture>
+	</include>
+
+	<include name="OSDSettingsBackNight">
+		<texture>osd/night/osd_settings_back.png</texture>
+	</include>
+
+	<include name="OSDProgressNight">
+		<lefttexture>osd/night/osd_progress_left.png</lefttexture>
+		<midtexture>osd/night/osd_progress_mid.png</midtexture>
+		<righttexture>osd/night/osd_progress_right.png</righttexture>
+	</include>
+
+	<include name="OSDVisSelectNight">
+		<texturebg border="5">dialogs/night/vis_select.png</texturebg>
+	</include>
+
+	<include name="OSDSettingsButtonFocusNight">
+		<texture>osd/night/osd_settings_buttonf.png</texture>
+	</include>
+
+	<include name="OSDSettingsButtonNoFocusNight">
+		<texture>osd/night/osd_settings_buttonnf.png</texture>
+	</include>
+
+	<include name="OSDNumItemsColorNight">
+		<textcolor>FF929191</textcolor>
+	</include>
+
+	<!-- KEYBOARD -->
+	<!-- Light -->
+	<include name="KeyboardHeaderLight">
+		<control type="label" id="311">
+			<description>Dialog heading</description>
+			<posx>0</posx>
+			<posy>186</posy>
+			<width>1280</width>
+			<height>22</height>
+			<font>Font_KeyboardTitle</font>
+			<align>center</align>
+			<include>dialogheadingcolor</include>
+		</control>
+
+	</include>
+
+	<include name="KeyboardSizesLight">
+		<posx>368</posx>
+		<posy>216</posy>
+		<width>545</width>
+		<height>289</height>
+	</include>
+
+	<include name="KeyboardBackLight">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>545</width>
+		<height>289</height>
+		<texture>keyboard/keyboard_back.png</texture>
+	</include>
+
+	<include name="KeyboardSingleKeyOffLight">
+		<texturefocus>keyboard/keyboard_singlenf.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_singlenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardSingleKeyOnLight">
+		<texturefocus>keyboard/keyboard_singlef.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_singlef.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardDoubleKeyOffLight">
+		<texturefocus>keyboard/keyboard_doublenf.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_doublenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardDoubleKeyOnLight">
+		<texturefocus>keyboard/keyboard_doublef.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_doublef.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardTripleKeyOffLight">
+		<texturefocus>keyboard/keyboard_triplenf.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_triplenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardTripleKeyOnLight">
+		<texturefocus>keyboard/keyboard_triplef.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_triplef.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardSpaceBarOffLight">
+		<texturefocus>keyboard/keyboard_spacenf.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_spacenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardSpaceBarOnLight">
+		<texturefocus>keyboard/keyboard_spacef.png</texturefocus>
+		<texturenofocus>keyboard/keyboard_spacef.png</texturenofocus>
+	</include>
+
+	<!-- Night -->
+	<include name="KeyboardHeaderNight">
+		<control type="label" id="311">
+			<description>Dialog heading</description>
+			<posx>0</posx>
+			<posy>-18</posy>
+			<width>546</width>
+			<height>22</height>
+			<font>Font_KeyboardTitle</font>
+			<align>center</align>
+			<textcolor>FF717171</textcolor>
+		</control>
+
+	</include>
+
+	<include name="KeyboardSizesNight">
+		<posx>368</posx>
+		<posy>216</posy>
+		<width>546</width>
+		<height>332</height>
+	</include>
+
+	<include name="KeyboardBackNight">
+		<posx>0</posx>
+		<posy>-42</posy>
+		<width>546</width>
+		<height>332</height>
+		<texture>keyboard/night/keyboard_back.png</texture>
+	</include>
+
+	<include name="KeyboardSingleKeyOffNight">
+		<texturefocus>keyboard/night/keyboard_singlenf.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_singlenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardSingleKeyOnNight">
+		<texturefocus>keyboard/night/keyboard_singlef.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_singlef.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardDoubleKeyOffNight">
+		<texturefocus>keyboard/night/keyboard_doublenf.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_doublenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardDoubleKeyOnNight">
+		<texturefocus>keyboard/night/keyboard_doublef.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_doublef.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardTripleKeyOffNight">
+		<texturefocus>keyboard/night/keyboard_triplenf.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_triplenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardTripleKeyOnNight">
+		<texturefocus>keyboard/night/keyboard_triplef.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_triplef.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardSpaceBarOffNight">
+		<texturefocus>keyboard/night/keyboard_spacenf.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_spacenf.png</texturenofocus>
+	</include>
+
+	<include name="KeyboardSpaceBarOnNight">
+		<texturefocus>keyboard/night/keyboard_spacef.png</texturefocus>
+		<texturenofocus>keyboard/night/keyboard_spacef.png</texturenofocus>
+	</include>
+
+	<!-- SETTINGS -->
+	<!-- Light -->
+	<include name="SettingsBackPanelLight">
+		<texture>settings/settings_panelback.png</texture>
+	</include>
+
+	<include name="SettingsLeftMenuFocusTextColorsLight">
+		<posx>0</posx>
+		<width>216</width>
+		<height>58</height>
+		<textcolor>FFf5f5f5</textcolor>
+		<focusedcolor>FF262728</focusedcolor>
+		<selectedcolor>FF262728</selectedcolor>
+	</include>
+
+	<include name="SettingsLeftMenuFocusLight">
+		<texturefocus>settings/settings_leftmenufocus.png</texturefocus>
+	</include>
+
+	<include name="SettingsLeftMenuNoFocusLight">
+		<texturenofocus>settings/settings_leftmenufocus.png</texturenofocus>
+	</include>
+
+	<include name="SettingsSectionTitleColorLight">
+		<textcolor>FFbec0c2</textcolor>
+	</include>
+
+	<include name="SettingsSubHeadingsColorsFLight">
+		<textcolor>FF262728</textcolor>
+	</include>
+
+	<include name="SettingsSubHeadingsColorsNFLight">
+		<textcolor>FFf5f5f5</textcolor>
+	</include>
+
+	<include name="SettingsInternalBackPanelLight">
+		<posx>234</posx>
+		<posy>40</posy>
+		<width>1035</width>
+		<height>638</height>
+		<texture>settings/settings_intframe_bottom.png</texture>
+	</include>
+
+	<include name="SettingsIntFrameTopLight">
+		<posx>331</posx>
+		<posy>43</posy>
+		<width>842</width>
+		<height>634</height>
+		<texture>settings/settings_intframe_top.png</texture>
+	</include>
+
+	<include name="SettingsDefaultRadioButtonLight">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>49</height>
+		<texturefocus>settings/settings_radiobuttonofffocus.png</texturefocus>
+		<texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
+		<textcolor>FF939597</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+	</include>
+
+	<!-- Night -->
+	<include name="SettingsBackPanelNight">
+		<texture>settings/night/settings_panelback.png</texture>
+	</include>
+
+	<include name="SettingsLeftMenuFocusTextColorsNight">
+		<posx>0</posx>
+		<width>217</width>
+		<height>58</height>
+		<textcolor>FFA1A1A1</textcolor>
+		<focusedcolor>FFe8e8e8</focusedcolor>
+		<selectedcolor>FFe8e8e8</selectedcolor>
+	</include>
+
+	<include name="SettingsLeftMenuFocusNight">
+		<texturefocus>settings/night/settings_leftmenufocus.png</texturefocus>
+	</include>
+
+	<include name="SettingsLeftMenuNoFocusNight">
+		<texturenofocus>settings/night/settings_leftmenufocus.png</texturenofocus>
+	</include>
+
+	<include name="SettingsSectionTitleColorNight">
+		<textcolor>FF818181</textcolor>
+	</include>
+
+	<include name="SettingsSubHeadingsColorsFNight">
+		<textcolor>FFb8b8b8</textcolor>
+	</include>
+
+	<include name="SettingsSubHeadingsColorsNFNight">
+		<textcolor>FF717171</textcolor>
+	</include>
+
+	<include name="SettingsInternalBackPanelNight">
+		<posx>234</posx>
+		<posy>41</posy>
+		<width>1033</width>
+		<height>636</height>
+		<texture>settings/night/settings_intframe_bottom.png</texture>
+	</include>
+
+	<include name="SettingsIntFrameTopNight">
+		<posx>234</posx>
+		<posy>41</posy>
+		<width>1033</width>
+		<height>637</height>
+		<texture>settings/night/settings_intframe_top.png</texture>
+	</include>
+
+	<include name="SettingsDefaultRadioButtonNight">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>48</height>
+		<texturefocus>settings/night/settings_radiobuttonofffocus.png</texturefocus>
+		<texturenofocus>settings/night/settings_radiobuttonoff.png</texturenofocus>
+		<textcolor>FF818181</textcolor>
+		<focusedcolor>FFe8e8e8</focusedcolor>
+	</include>
+
+	<!-- PROFILE SETTINGS -->
+	<!-- Light -->
+	<include name="ProfileSettingsDefaultRadioButtonFLight">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>49</height>
+		<texture>settings/settings_radiobuttonofffocus.png</texture>
+	</include>
+
+	<include name="ProfileSettingsDefaultRadioButtonNFLight">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>49</height>
+		<texture>settings/settings_radiobuttonoff.png</texture>
+	</include>
+
+	<include name="ProfileSettingsSizesLight">
+		<height>49</height>
+	</include>
+
+	<include name="ProfileSettingsBackLight">
+		<width>847</width>
+		<texture>dialogs/profilesettings_back.png</texture>
+	</include>
+
+	<include name="ProfileButtonLight">
+		<posx>683</posx>
+		<width>154</width>
+		<textcolor>FFf5f5f5</textcolor>
+		<focusedcolor>FF262728</focusedcolor>
+		<selectedcolor>FF262728</selectedcolor>
+		<texturefocus>dialogs/setcontent_rightmenu_highlight.png</texturefocus>
+	</include>
+
+	<include name="ProfileSettingsFrontLight">
+		<width>847</width>
+		<height>288</height>
+		<texture>dialogs/profilesettings_front.png</texture>
+	</include>
+
+	<include name="ProfileContentButtonLight">
+		<width>405</width>
+		<height>41</height>
+		<texturefocus>dialogs/setcontent_button_focus.png</texturefocus>
+		<texturenofocus>dialogs/setcontent_button_nofocus.png</texturenofocus>
+		<textcolor>FF939597</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+	</include>
+
+	<!-- Night -->
+	<include name="ProfileSettingsDefaultRadioButtonFNight">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>48</height>
+		<texture>settings/night/settings_radiobuttonofffocus.png</texture>
+		<textcolor>FF818181</textcolor>
+		<focusedcolor>FFe8e8e8</focusedcolor>
+	</include>
+
+	<include name="ProfileSettingsDefaultRadioButtonNFNight">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>936</width>
+		<height>48</height>
+		<texture>settings/night/settings_radiobuttonoff.png</texture>
+		<textcolor>FF818181</textcolor>
+		<focusedcolor>FFe8e8e8</focusedcolor>
+	</include>
+
+	<include name="ProfileSettingsSizesNight">
+		<height>48</height>
+	</include>
+
+	<include name="ProfileSettingsBackNight">
+		<width>848</width>
+		<texture>dialogs/night/profilesettings_back.png</texture>
+	</include>
+
+	<include name="ProfileButtonNight">
+		<posx>684</posx>
+		<width>154</width>
+		<textcolor>FF818181</textcolor>
+		<focusedcolor>FFe8e8e8</focusedcolor>
+		<selectedcolor>FFe8e8e8</selectedcolor>
+		<texturefocus>dialogs/night/setcontent_rightmenu_highlight.png</texturefocus>
+	</include>
+
+	<include name="ProfileSettingsFrontNight">
+		<width>848</width>
+		<height>288</height>
+		<texture>dialogs/night/profilesettings_front.png</texture>
+	</include>
+
+	<include name="ProfileContentButtonNight">
+		<width>404</width>
+		<height>41</height>
+		<texturefocus>dialogs/night/setcontent_button_focus.png</texturefocus>
+		<texturenofocus>dialogs/night/setcontent_button_nofocus.png</texturenofocus>
+		<textcolor>FF505050</textcolor>
+		<focusedcolor>FFd8d8d8</focusedcolor>
+	</include>
+
+	<!-- LOCK SETTINGS -->
+	<!-- Light -->
+	<include name="LockSettingsBackLight">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>869</width>
+			<height>317</height>
+			<texture>dialogs/scrapersettings_back.png</texture>
+		</control>
+
+	</include>
+
+	<include name="LockSettingsControlAreaSizesLight">
+		<posx>10</posx>
+		<posy>35</posy>
+		<width>679</width>
+		<height>246</height>
+	</include>
+
+	<!-- Night -->
+	<include name="LockSettingsBackNight">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>862</width>
+			<height>316</height>
+			<texture>dialogs/night/scrapersettings_back.png</texture>
+		</control>
+
+	</include>
+
+	<include name="LockSettingsControlAreaSizesNight">
+		<posx>13</posx>
+		<posy>35</posy>
+		<width>681</width>
+		<height>251</height>
+	</include>
+
+	<!-- OTHER -->
+	<include name="BackgroundTimings">
+		<timeperimage>20000</timeperimage>
+		<randomize>true</randomize>
+		<fadetime>1000</fadetime>
+	</include>
+
+	<include name="OSDInfoSizesLight">
+		<height>151</height>
+	</include>
+
+	<include name="OSDInfoSizesLight">
+		<height>159</height>
+	</include>
+
+	<include name="MuteBackLight">
+		<texture>dialogs/contextbar_back.png</texture>
+	</include>
+
+	<include name="MuteBackNight">
+		<texture>dialogs/night/contextbar_back.png</texture>
+	</include>
+
+</includes>

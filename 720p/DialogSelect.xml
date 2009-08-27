@@ -1,0 +1,105 @@
+<window type="dialog" id="2000">
+	<defaultcontrol>3</defaultcontrol>
+	<!-- castmod let window appear in front of video info -->
+  <zorder>3</zorder>
+  <!-- end castmod let window appear in front of video info -->
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<include>Animation_DialogPopup</include>
+	<controls>
+		<control type="image">
+			<description>Darken screen</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>common/black.png</texture>
+			<colordiffuse>d7FFFFFF</colordiffuse>
+			<include>Animation_CommonFade</include>
+			<visible>true</visible>
+		</control>
+
+		<control type="image">
+			<description>Panel</description>
+			<posx>200</posx>
+			<posy>120</posy>
+			<width>881</width>
+			<height>481</height>
+			<texture>osd/osd_settings_back.png</texture>
+		</control>
+<!-- castmod keeps plot/cast button from disappearing  -->
+    <control type="button" id="5">
+      <description>manual button</description>
+      <posx>1080</posx>
+      <posy>140</posy>
+      <width>90</width>
+      <align>center</align>
+      <label>368</label>
+      <font>font10</font>
+      <onleft>3</onleft>
+      <onright>3</onright>
+      <onup>3</onup>
+      <ondown>3</ondown>
+     <include>Objects_ContextMenuButton2</include>
+         </control>
+  <!--  end castmod keeps plot/cast button from disappearing -->
+		<control type="list" id="3">
+			<posx>250</posx>
+			<posy>155</posy>
+			<width>781</width>
+			<height>400</height>
+			<onleft>-</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<pagecontrol>90</pagecontrol>
+			<scrolltime>0</scrolltime>
+			<itemlayout height="40">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>781</width>
+					<height>40</height>
+					<texture>osd/osd_settings_buttonnf.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>721</width>
+					<height>40</height>
+					<textcolor>FF929191</textcolor>
+					<aligny>center</aligny>
+					<font>Font_OSDOptions</font>
+					<info>ListItem.Label</info>
+				</control>
+
+			</itemlayout>
+			<focusedlayout height="40">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>781</width>
+					<height>40</height>
+					<texture>osd/osd_settings_buttonf.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>721</width>
+					<height>40</height>
+					<textcolor>FFFFFFFF</textcolor>
+					<aligny>center</aligny>
+					<font>Font_OSDOptions</font>
+					<info>ListItem.Label</info>
+				</control>
+
+			</focusedlayout>
+		</control>
+
+	</controls>
+</window>

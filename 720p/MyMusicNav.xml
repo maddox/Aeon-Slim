@@ -1,0 +1,49 @@
+<window id="502">
+	<defaultcontrol>550</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<views>550,50,551,57,53</views>
+	<controls>
+	 	<control type="multiimage">
+			<include>BackgroundVarsGlobal</include>
+			<include>BackgroundVarsMusic</include>
+		</control>  
+
+		<control type="largeimage" id="102">
+			<include>FullscreenDimensions</include>
+			<visible>!Control.IsVisible(103) + [Control.IsVisible(57) | Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)] + !IsEmpty(listitem.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
+			<fadetime>400</fadetime>
+			<texture>$INFO[listitem.property(fanart_image)]</texture>
+			<include>Animation_FanartFade</include>
+		</control>
+
+		<control type="largeimage" id="103">
+			<include>FullscreenDimensions</include>
+			<visible>[Control.IsVisible(57) | Control.IsVisible(50) | Control.IsVisible(550) | Control.IsVisible(551)] + !IsEmpty(container.property(fanart_image)) + !Skin.HasSetting(nomusicfanart)</visible>
+			<fadetime>400</fadetime>
+			<texture>$INFO[container.property(fanart_image)]</texture>
+			<include>Animation_FanartFade</include>
+		</control>
+
+		<include>Furniture_WallBackground</include>
+		<control type="group">
+
+			<include>FullscreenDimensions</include>
+			<include>Animation_OpenCloseZoom</include>
+			<include>Furniture_Time</include>
+			<include>Furniture_MediaPanel</include>
+			<include>Viewtype_Wall</include>
+			<include>Furniture_WallTime</include>
+			<include>Furniture_WallRSS</include>
+			 <include>ScrollOffsetLabel</include>
+			<include>Viewtype_List</include>
+			<include>Viewtype_List_Slim</include>
+			<include>Viewtype_List_Low</include>
+			<include>Viewtype_Showcase</include>
+			 <include>NewMediaMenu</include>
+		</control>
+
+		<include>Furniture_DarkGradient</include>
+		<!--<include>Background_ContextBlack</include>-->
+		<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
+	</controls>
+</window>
